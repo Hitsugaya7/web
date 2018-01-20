@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background: #fff;
+
+}
+a,a:visited {
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+
+}
+
+
+.center {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-top a,a:visited {
+    text-decoration: none;
+    color:#000;
+    border:2px solid transparent;
+    border-radius: 0 5px 0 5px;
+    transition: all ease-in-out 0.3s;
+    padding: 8px;
+}
+.menu-top a:hover{
+    border:2px solid #000;
+}
+.for-line{
+    border-bottom: 2px solid #eee;
+}
+
+.localisation ul{
+    overflow: hidden;
+}
+.localisation ul li{
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+}
+header{
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+    .logo-left-top {
+        float: left; margin-left: 20px;margin-top: 40px;
+    }
+        .menu-top ul li {
+            list-style: none;font-size:1em;float:left;margin-top: 70px;
+        }
+        .menu-top a {
+            margin: 0 20px;
+            color:#000;text-transform: uppercase;text-align: center;vertical-align: middle;
+        }
+
+    section {
+        margin-bottom: 40px;padding-bottom: 10px;
+        overflow: hidden;
+    }
+    .headerOfSlider{
+        text-align: center;
+        text-transform: uppercase;
+        font-size:2em;
+    }
+        .headerOfSlider h3{
+            padding-top: 20px;
+        }
+
+    #overlay{
+        display: none;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: #000;
+        opacity: 0.5;
+    }
+#popup1{
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    width:auto;
+    min-width: 150px;
+    min-height: 30px;
+    padding: 20px;
+    margin: 10px;
+
+    background:#FDBE33;
+    border-radius: 4px;
+    opacity: 0.7;
+    box-shadow: 0 0 10px #70771e;
+
+    text-align: center;
+}
+/*галерея изображений*/
+.gallery{
+    width: 71%;
+    margin-top: 10px;margin-right: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    float:left;
+    overflow: hidden;
+}
+    .gallery-main{
+        width: 100%;
+        height:500px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border:1px solid #eee;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+
+
+    }
+    .gallery-main:hover{
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+
+    }
+
+    .gallery-item {
+        width: 10.9375em;
+        height:10em;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        opacity: 0.5;
+        /*box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);*/
+    }
+    .gallery-item.active{
+        opacity: 1;
+    }
+    .gallery-item:hover{
+        opacity: 1;
+        transition:opacity 0.3s;
+    }
+
+/*конец галереии*/
+
+/* закладки начоло */
+.tabs{
+    width:25%;
+    margin-right:5px;
+    float: left;
+}
+    .button-tabs{
+        width:100%;
+        margin: 0 auto;
+        text-align:center;
+    }
+        .button-tabs input {
+            padding: 10px;
+            margin: 0 0 10px 0;
+            background-color: #fff; border:2px solid #000;
+            width: 80px;
+            transition: all 0.3s linear;
+            font-family: 'Yanone Kaffeesatz', sans-serif;font-size:20px;
+            margin-top: 25px;
+        }
+        .button-tabs input:hover {
+             border-radius:5px;
+             cursor: pointer;
+         }
+
+        .button-tabs input:first-child{ }
+
+        form[name="basket"] a {
+	 	border: none;
+	 	padding: 20px;margin-top: 10px;
+	 	background-color: #0280C4;
+	 	color:#fff;font-family: 'Lobster', cursive;font-size:18px;
+	 	transition:0.3s;
+
+
+	 }
+    .form a:hover{
+	 	cursor:pointer;
+	 	background-color: #02B5C4;
+
+	 }
+    .form a {
+        border: none;
+        padding: 20px;margin-top: 10px;
+        background-color: #0280C4;
+        color:#fff;font-family: 'Lobster', cursive;font-size:18px;
+        transition:0.3s;
+
+    }
+/*закладки конец*/
+
+
+
+/*Футер начало */
+.footer-bottom{
+    min-height: 50px;
+    background:#fff;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.left-footer{
+    width: 30%;
+    float: left;
+}
+/*Футер конец */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* Каталог таваров */
+#container{
+
+}
+     #sort{
+        text-align: center;  vertical-align: middle;
+        display: block;
+        margin: 0px auto 20px auto ;
+    }
+        #sort a:hover{
+            cursor: pointer;
+        }
+    .box{
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+        .box img{
+            width: 40%;
+            margin-right: 10px;
+            float: left;
+        }
+        .about-product{
+
+        }
+
+
+        /*cart */
+
+table#cart_table{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+table#cart_table thead{
+    font-weight: bolder;
+}
+
+table#cart_table thead tr, table#cart_table tr{
+    border-bottom: 1px solid #d27b43;
+    line-height: 30px;
+}
+
+table#cart_table tr td, table#cart_table tr td{
+    vertical-align: middle;
+    text-align: center;
+}
+
+td.cart_img{
+    padding: 5px 15px 5px 5px;
+}
+
+td.cart_img img{
+    max-height: 100px;
+}
+
+span#result{
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.2em;
+    width: 100%;
+    display: block;
+}
+#login-form {
+    animation-name: slideDown;
+    -webkit-animation-name: slideDown;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+
+    display: none;
+    position: relative;
+    z-index: 1000;
+    width: 205px;
+    padding: 30px;
+    margin: 0 auto;
+    top: 50%;
+
+    background:#fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #70771e;
+
+    text-align: center;
+}
+
+#login-form h1{
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom:10px;
+    border-bottom: 1px solid #D77206;
+}
+
+#login-form input{
+    border: 0;
+    border-radius: 2px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(8%);
+    }
+    65%{
+        transform: translateY(-4%);
+    }
+    80%{
+        transform: translateY(4%);
+    }
+    95%{
+        transform: translateY(-2%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+    50%{
+        -webkit-transform: translateY(8%);
+    }
+    65%{
+        -webkit-transform: translateY(-4%);
+    }
+    80%{
+        -webkit-transform: translateY(4%);
+    }
+    95%{
+        -webkit-transform: translateY(-2%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.order{
+    display: block;
+    position: static !important;
+    width: 100%;
+    text-align: right;
+    margin: 10px 0px;
+    font-size: 1.3em;
+}
+
+div.cabinet_block{
+    display: inline-block;
+    min-width: 248px;
+    vertical-align: top;
+
+}
+
+div.cabinet_block table{
+    width: 900px !important;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+div#map{
+    width: 600px;
+    height: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+div#datetime{
+    font-size: 1.1em;
+    padding-bottom: 8px;
+    font-style: italic;
+}
+
+div.comment{
+    width: 875px;
+    font-size: 1.1em;
+    padding: 10px;
+    border: 3px solid #EEEEEE;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+div.comment hr{
+    color: #EEEEEE;
+}
+
+div#comments-area button.button{
+    display: inline-block;
+    vertical-align: top;
+    margin: 12px 10px;
+}
+
+div#comments-area textarea{
+    width: 82%;
+    resize: none;
+    outline: none;
+    overflow: auto;
+}
+
+div.comment p{
+    padding: 0 !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    text-align: left !important;
+    text-indent: 10px !important;
+    text-transform: none !important;
+    max-width: 800px;
+    word-break: break-all;
+}
+
+.korpus{
+    padding: 20px 10px 10px 10px;
+}
+
+.korpus div{
+    margin-top: 10px;
+}
+
+.korpus > div,
+.korpus > input {
+    display: none;
+}
+.korpus label {
+    padding: 7px;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+    bottom: 1px;
+    background: #b26839;
+    font-size: 1.3em;
+    margin-right: 5px;
+}
+.korpus input[type="radio"]:checked + label {
+    background: #EEEEEE;
+}
+.korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+    display: block;
+}
+
+@-webkit-keyframes example {
+    0% {opacity: 0;}
+    25% {opacity: 0.3;}
+    50% {opacity:0.5;}
+    75% {opacity:0.7;}
+    100% {opacity:1;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {opacity: 0;}
+    25% {opacity: 0.3;}
+    50% {opacity:0.5;}
+    75% {opacity:0.7;}
+    100% {opacity:1;}
+}
